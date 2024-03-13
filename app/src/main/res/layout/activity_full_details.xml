@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FullDetails">
+
+    <LinearLayout
+        android:id="@+id/lindetails"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:background="@drawable/image"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtfullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Full Name:- Divyesh"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone :- 9316277258"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Email:-divyeshtrapasiya4@gmail.com"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Address:-B253marutidham soc,velanja"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtgender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Gender :- MALE"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status :- SINGLE"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/txtlanguages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Landuages Speaks:-ENGLISH HINDI\n                               GUJARATI"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"/>
+
+         </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btneducation"
+        android:layout_below="@+id/lindetails"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="* EDUCATION DETAILS "
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/linpassing"
+        android:layout_below="@+id/btneducation"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt10th"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10th(%) :- 80 "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/txt12th"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12th(%) :- 82 "
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtgraduation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Graduation(%) :- 70 "
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtpass10th"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Passing Year(10th) :- 2019 "
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtpass12th"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Passing Year(12th) :- 2022 "
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtpassgraduation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passing Year(Graduation) :- 2023 "
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnjob"
+        android:layout_below="@+id/linpassing"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="* JOB EXPERIENCE "
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txtworked"
+        android:layout_below="@+id/btnjob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Worked as manager"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnskills"
+        android:layout_below="@+id/txtworked"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="* SKILLS "
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txtmsoffice"
+        android:layout_below="@+id/btnskills"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="MS OFFICE Communication Skills Leadership"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

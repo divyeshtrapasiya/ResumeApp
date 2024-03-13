@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDFD"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/retresume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box1"
+        android:elevation="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/font2"
+            android:text="RESUME"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/retresume">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txtpersonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="PERSONAL DETAILS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtinfullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtpersonal"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtfullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:hint="FULL NAME"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtinphonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtinfullname"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:maxLength="10"
+                    android:hint="PHONE NUMBER"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtinemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtinphonenumber"
+                android:layout_marginHorizontal="20dp"
+
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:hint="EMAIL"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtinaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtinemail"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ADDRESS"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtlanguages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtinaddress"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="LANGUAGES SPEAKS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/chklanguages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtlanguages"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/chkenlish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ENGLISH"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chkhindi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HINDI"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chkgujarati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GUJARATI"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chkmarathi"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:text="MARATHI"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtgender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chklanguages"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="GENDER"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rggender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtgender"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rgmale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MALE"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rgfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="FEMALE"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rgother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="OTHER"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtmarital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rggender"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="MARITAL STATUS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/RGmarital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtmarital"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SINGLE"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="MARRIDE"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="DIVORCED"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txthobbies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RGmarital"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="HOBBIES"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linhobbie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txthobbies"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/chksinging"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Singing"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chkdancing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Dancing"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chkgym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="GYM    "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chkreading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Reading"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linhobbie1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linhobbie"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/chkcyclling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cycling"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chkmovies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Movies  "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chkcricket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Cricket"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chktravalling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Travalling"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txteducation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linhobbie1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="EDUCATION DETAILS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:id="@+id/retclass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txteducation"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/txtclass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="CLASS  "
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt10th"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@+id/txtclass"
+                    android:text="10th"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt12th"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/txt10th"
+                    android:text="12th"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtgraduation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/txt12th"
+                    android:text="Graduation"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/retpercentages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/retclass"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/txtpercentages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="PERCENTAGES"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt10th"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:imeOptions="actionNext"
+                    android:maxLength="2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/txtpercentages"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edt12th"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:imeOptions="actionNext"
+                    android:maxLength="2"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/edt10th"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+
+
+                <EditText
+                    android:id="@+id/edtgraduation"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:maxLength="2"
+
+                    android:imeOptions="actionDone"
+                    android:layout_toRightOf="@+id/edt12th"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/retyear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/retpercentages"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/txtyear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="YEAR       "
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtyear10th"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/txtyear"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edtyear12th"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:maxLength="4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/edtyear10th"
+                    android:textColor="@color/black" />
+
+
+                <EditText
+                    android:id="@+id/edtyeargraduation"
+                    android:layout_width="60dp"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:layout_height="50dp"
+                    android:maxLength="4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/edtyear12th"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtpastjob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/retyear"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="PAST JOB EXPERIENCE"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tetpastjob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtpastjob"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtexperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtskills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tetpastjob"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="SKILLS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linskills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtskills"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/chkms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MS OFFICE"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chkskills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Communication Skill"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chksteam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team Work"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linskills1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linskills"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/chkproblem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Problem solving"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chkleader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leadership"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chktime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="Time \nmanagement"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linskills1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/box2"
+                android:text="SUBMIT" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
